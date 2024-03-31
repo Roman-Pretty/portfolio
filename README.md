@@ -16,7 +16,7 @@ Welcome to my portfolio website! Here, you will find information about me, my sk
 
 ## Getting Started
 
-This site is available at [http://romanpretty.com](http://romanpretty.com).
+This site is available at [https://romanpretty.com](https://romanpretty.com).
 
 ## License
 

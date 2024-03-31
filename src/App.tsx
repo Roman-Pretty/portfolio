@@ -13,7 +13,18 @@ function App() {
       <About />
       <Projects />
       <section id='resume' className="hero min-h-[90vh] bg-base-200">
-        <div className="hero-content flex-col lg:flex-row-reverse">
+        <div className="hero-content flex-col-reverse lg:flex-row gap-16">
+            <div className="mockup-phone hidden lg:grid">
+              <div className="camera"></div>
+              <div className="display">
+                <div className="artboard artboard-demo phone-1 bg-base-100">
+                  <div className='flex flex-col items-center text-center'>
+                    {/* Put screenshot of CV here! */}
+                  </div>
+
+                </div>
+              </div>
+            </div>
           <div className=''>
             <h1 className="text-5xl font-bold pb-10">Resume</h1>
             <p className="text-lg pb-10 max-w-3xl">
@@ -34,9 +45,9 @@ function App() {
           <a href='mailto:romanjjpretty@gmail.com'><Mail /></a>
           <a href='tel:+447493402029'><Phone /></a>
           <a className="btn btn-primary">
-                    Contact
-                    <ArrowRight />
-                </a>
+            Contact
+            <ArrowRight />
+          </a>
         </nav>
       </footer>
     </>
