@@ -2,6 +2,8 @@ import { Projects } from './components/projects/Projects';
 import { About } from './components/about/About';
 import { Hero } from './components/hero/Hero';
 import Header from "./components/header/Header"
+import CV from "./assets/roman-pretty-resume.pdf"
+import CVImage from "./assets/resume.png"
 import { Download, ArrowRight, Linkedin, Mail, Github, Phone } from 'lucide-react/';
 
 function App() {
@@ -20,6 +22,7 @@ function App() {
                 <div className="artboard artboard-demo phone-1 bg-base-100">
                   <div className='flex flex-col items-center text-center'>
                     {/* Put screenshot of CV here! */}
+                    <img src={CVImage} className='max-w-full max-h-full'></img>
                   </div>
 
                 </div>
@@ -30,7 +33,7 @@ function App() {
             <p className="text-lg pb-10 max-w-3xl">
               I'm always looking for new opportunities and challenges. Feel free to download my resume for a concise overview of my skills and experience.
             </p>
-            <a href="" className="btn btn-primary">Download<Download /></a>
+            <a href={CV} download={true} className="btn btn-primary">Download<Download /></a>
           </div>
         </div>
       </section>

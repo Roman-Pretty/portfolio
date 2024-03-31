@@ -10,7 +10,7 @@ interface ProjectCardProps {
   link?: string;
   githublink?: string;
   image?: string;
-  badges?: [];
+  badges?: [{name: string, color: string}];
   
 }
 
