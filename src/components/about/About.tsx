@@ -11,7 +11,7 @@ export function About() {
                         <li className="step step-primary">Graduated Wymondham College with A*A*A</li>
                         <li className="step step-primary">Achieved grade 8 LAMDA exam and an A in the extended project qualification</li>
                         <li className="step step-primary">Studying an integrated MSCi in Computer Science at Queen Mary University of London</li>
-                        <li className="step">Graduating with a honours in April 2026, on track for a first</li>
+                        <li className="step">Graduating with honours in April 2026, on track for a first</li>
                     </ul>
                 </div>
             </div>

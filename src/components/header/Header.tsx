@@ -35,7 +35,7 @@ const Header = () => {
                     <Sun className="swap-off" />
                     <Moon className="swap-on" />
                 </label>
-                <a className="btn btn-primary">
+                <a href='mailto:romanjjpretty@gmail.com' className="btn btn-primary">
                     Contact
                     <ArrowRight />
                 </a>

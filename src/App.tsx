@@ -47,7 +47,7 @@ function App() {
           <a href='https://www.github.com/Roman-Pretty' target="_blank" rel="noopener noreferrer"><Github /></a>
           <a href='mailto:romanjjpretty@gmail.com'><Mail /></a>
           <a href='tel:+447493402029'><Phone /></a>
-          <a className="btn btn-secondary">
+          <a href='mailto:romanjjpretty@gmail.com' className="btn btn-secondary">
             Contact
             <ArrowRight />
           </a>
