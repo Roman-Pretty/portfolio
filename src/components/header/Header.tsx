@@ -1,5 +1,4 @@
 import { ArrowRight, Menu, Sun, Moon, GraduationCap } from 'lucide-react';
-
 const Header = () => {
 
     return (

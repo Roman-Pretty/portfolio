@@ -10,8 +10,7 @@ interface ProjectCardProps {
   link?: string;
   githublink?: string;
   image?: string;
-  badges?: [{name: string, color: string}];
-  
+  badges?: { name: string; color: string }[];
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
