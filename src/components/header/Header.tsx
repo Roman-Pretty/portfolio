@@ -1,4 +1,4 @@
-import { ArrowRight, Menu, Moon, Sun } from 'lucide-react';
+import { ArrowRight, Menu } from 'lucide-react';
 const Header = () => {
 
     return (
