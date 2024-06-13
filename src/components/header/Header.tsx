@@ -1,8 +1,8 @@
-import { ArrowRight, Menu, Sun, Moon, GraduationCap } from 'lucide-react';
+import { ArrowRight, Menu, Moon, Sun } from 'lucide-react';
 const Header = () => {
 
     return (
-        <div className="navbar bg-base-100 p-6 lg:px-32">
+        <div className="navbar p-10 lg:px-32 sticky h-14 inset-x-0 top-0 z-30 w-full border-b border-gray-200 bg-white/75 backdrop-blur-lg transition-all">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="lg:hidden">
@@ -15,9 +15,6 @@ const Header = () => {
                     </ul>
                 </div>
                 <a href='/' className='hidden sm:flex items-center gap-4'>
-                    <div className="btn btn-square btn-primary no-animation hover:bg-primary hover:border-none">
-                    <GraduationCap strokeWidth={2} size={32}/>
-                    </div>
                     <a className="text-xl font-bold gap-4">Roman Pretty</a>
                 </a>
             </div>
@@ -29,14 +26,9 @@ const Header = () => {
                 </ul>
             </div>
             <div className="navbar-end gap-4">
-                <label className="swap swap-rotate">
-                    <input type="checkbox" className="theme-controller" value="dark" />
-                    <Sun className="swap-off" />
-                    <Moon className="swap-on" />
-                </label>
-                <a href='mailto:romanjjpretty@gmail.com' className="btn btn-primary">
+                <a href='mailto:romanjjpretty@gmail.com' className="btn btn-neutral hover:bg-zinc-700 rounded-md">
                     Contact
-                    <ArrowRight />
+                    <ArrowRight strokeWidth={1.6} />
                 </a>
             </div>
         </div>

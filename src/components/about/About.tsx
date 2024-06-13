@@ -1,8 +1,8 @@
 export function About() {
     return (
-        <section id='about' className="hero px-2 lg:px-24 min-h-screen flex flex-col items-center bg-base-200">
-            <h2 className="text-3xl font-bold text-center py-10">My Story</h2>
-            <p className="text-lg pb-10 max-w-3xl text-center">My dedication to learning extends beyond the classroom, as I actively seek out opportunities to deepen my knowledge and expertise through online courses, workshops, and personal projects.</p>
+        <section id='about' className="hero px-2 lg:px-24 min-h-screen flex flex-col items-center bg-base-200/50">
+            <h2 className="text-3xl font-bold text-center py-10">About</h2>
+            <p className="text-lg pb-10 max-w-3xl text-center text-zinc-600">My dedication to learning extends beyond the classroom, as I actively seek out opportunities to deepen my knowledge and expertise through online courses, workshops, and personal projects.</p>
             <div className="card bordered shadow-lg bg-base-100">
                 <div className="card-body">
                     <h3 className="card-title">Education</h3>

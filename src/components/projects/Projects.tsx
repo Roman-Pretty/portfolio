@@ -1,12 +1,12 @@
-import ProjectCard from './ProjectCard';
 import SurveySpark from '../../assets/survey-spark.png';
 import TourCast from '../../assets/tour-cast.png';
+import ProjectCard from './ProjectCard';
 
 export function Projects() {
     return (
-        <section id='projects' className="hero px-2 lg:px-24 min-h-screen flex flex-col items-center bg-base-100">
+        <section id='projects' className="hero px-2 lg:px-24 min-h-screen flex flex-col items-center">
             <h2 className="text-3xl font-bold text-center py-10">Projects</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 pb-[2vh]">
 
                 <ProjectCard
                     badges={[
@@ -42,6 +42,18 @@ export function Projects() {
                 image={TourCast} title="TourCast" description="
             A weather app built using React that displays what activities are optimal based on climate data.
             " githublink='https://www.github.com/Roman-Pretty/TourCast' link='https://roman-pretty.github.io/TourCast/' />
+            {/* <ProjectCard
+            badges={[ 
+                { name: 'JS', color: 'bg-[#fcdc00]' },
+                { name: 'React', color: 'bg-[#3998b6]' },
+                { name: 'EmailJS', color: 'bg-[#ff8434]'} ,
+                { name: 'daisyUI', color: 'bg-[#ff9903]'}
+                
+            ]}
+            image={SheringhamAcupuncture} title='Sheringham Acupuncture' description="
+            A simple website built to a Client's requests, with an EmailJS contact form.
+            " link='http://www.sheringhamacupuncture.co.uk/' githublink='https://github.com/Roman-Pretty/sheringham-acupuncture'
+            /> */}
             </div>
         </section>
     )

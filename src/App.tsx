@@ -8,13 +8,14 @@ import { Download, ArrowRight, Linkedin, Mail, Github, Phone } from 'lucide-reac
 
 function App() {
 
+
   return (
-    <>
+    <main className='grainy'>
       <Header />
       <Hero />
       <About />
       <Projects />
-      <section id='resume' className="hero min-h-[90vh] bg-base-200">
+      <section id='resume' className="hero min-h-[90vh] bg-base-200/50">
         <div className="hero-content flex-col-reverse lg:flex-row gap-16">
             <div className="mockup-phone hidden lg:grid">
               <div className="camera"></div>
@@ -33,7 +34,7 @@ function App() {
             <p className="text-lg pb-10 max-w-3xl">
               I'm always looking for new opportunities and challenges. Feel free to download my resume for a concise overview of my skills and experience.
             </p>
-            <a href={CV} download={true} className="btn btn-primary">Download<Download /></a>
+            <a href={CV} download={true} className="btn btn-neutral rounded-md">Download<Download /></a>
           </div>
         </div>
       </section>
@@ -53,7 +54,7 @@ function App() {
           </a>
         </nav>
       </footer>
-    </>
+    </main>
   )
 }
 

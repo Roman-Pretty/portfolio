@@ -33,7 +33,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 }) => {
 
   return (
-    <div className="card bordered shadow-lg">
+    <div className="card bordered shadow-lg bg-base-100">
       <div className="card-body gap-6">
         <h2 className="card-title">{title}</h2>
         <p>{description}</p>
@@ -64,7 +64,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           </div>
         </div>
 
-        <a href={link} className="btn btn-info mt-4" target="_blank" rel="noopener noreferrer">View Project<SquareArrowOutUpRight size={18} /></a>
+        <a href={link} className="btn mt-4" target="_blank" rel="noopener noreferrer">View Project<SquareArrowOutUpRight size={18} /></a>
       </div>
     </div>
   );
