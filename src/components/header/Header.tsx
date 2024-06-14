@@ -1,8 +1,40 @@
 import { ArrowRight, Menu } from 'lucide-react';
+import { useEffect } from 'react';
+
 const Header = () => {
+    useEffect(() => {
+        const handleScroll = () => {
+            const header = document.getElementById('header');
+            const heroSection = document.getElementById('hero');
+            const aboutSection = document.getElementById('about');
+
+            if (header && heroSection && aboutSection) {
+                const heroBottom = heroSection.getBoundingClientRect().bottom;
+                const aboutTop = aboutSection.getBoundingClientRect().top;
+
+                if (heroBottom <= 64 || aboutTop <= 0) {
+                    header.classList.remove('fixed');
+                    header.classList.remove('top-0');
+                    header.classList.add('absolute');
+                    header.classList.add('bottom-0');
+                } else {
+                    header.classList.add('fixed');
+                    header.classList.add('top-0');
+                    header.classList.remove('absolute');
+                    header.classList.remove('bottom-0');
+                }
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
     return (
-        <div className="navbar p-10 lg:px-32 sticky h-14 inset-x-0 top-0 z-30 w-full border-b border-gray-200 bg-white/75 backdrop-blur-lg transition-all">
+        <div id="header" className="navbar p-10 lg:px-32 fixed h-14 inset-x-0 top-0 z-30 w-full border-b border-gray-200 bg-white/75 backdrop-blur-lg transition-all">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="lg:hidden">
@@ -15,7 +47,7 @@ const Header = () => {
                     </ul>
                 </div>
                 <a href='/' className='hidden sm:flex items-center gap-4'>
-                    <a className="text-xl font-bold gap-4">Roman Pretty</a>
+                    <span className="text-xl font-bold gap-4">Roman Pretty</span>
                 </a>
             </div>
             <div className="navbar-center hidden lg:flex">

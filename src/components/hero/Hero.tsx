@@ -4,7 +4,7 @@ import img from '../../assets/image.png';
 export function Hero() {
 
     return (
-        <div className="hero min-h-[90vh] overflow-hidden pb-0">
+        <div className="hero min-h-[90vh] overflow-hidden pb-0 mt-[4rem]" id='hero'>
             <div className="hero-content flex-col lg:flex-row-reverse h-full pb-0">
                 <div className="lg:flex items-end h-full hidden relative w-[20vw]">
                     <img src={img} alt="Hero" className=" transform -scale-x-100 absolute -right-[18vw] min-w-[50vw] overflow-hidden" />

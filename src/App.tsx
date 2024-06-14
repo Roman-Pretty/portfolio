@@ -11,8 +11,8 @@ function App() {
 
   return (
     <main className='grainy'>
-      <Header />
       <Hero />
+      <Header />
       <About />
       <Projects />
       <section id='resume' className="hero min-h-[90vh] bg-base-200/50">
