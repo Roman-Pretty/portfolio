@@ -46,7 +46,7 @@ const Header = () => {
       <div className="navbar-end gap-4 hidden sm:flex">
         <a
           href="mailto:romanjjpretty@gmail.com"
-          className="btn btn-neutral hover:bg-zinc-700 rounded-full"
+          className="btn btn-neutral hover:bg-zinc-700 rounded-md"
         >
           Contact Me
           <ArrowRight strokeWidth={1.6} />

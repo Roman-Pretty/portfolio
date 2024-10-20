@@ -80,7 +80,6 @@ function App() {
               <div className="display">
                 <div className="artboard artboard-demo phone-1 bg-base-100">
                   <div className='flex flex-col items-center text-center'>
-                    {/* Put screenshot of CV here! */}
                     <img src={CVImage} className='max-w-full max-h-full'></img>
                   </div>
 
@@ -92,7 +91,7 @@ function App() {
             <p className="text-lg pb-10 max-w-3xl text-zinc-600">
               I'm always looking for new opportunities and challenges. Download my resume for a concise overview of my skills and experience.
             </p>
-            <a href={CV} download={true} className="btn btn-neutral rounded-full hover:bg-zinc-700">Download<ArrowDown /></a>
+            <a href={CV} download={true} className="btn btn-neutral rounded-md hover:bg-zinc-700">Download<ArrowDown /></a>
           </div>
         </div>
       </section>
@@ -106,7 +105,7 @@ function App() {
           <a href='https://www.github.com/Roman-Pretty' target="_blank" rel="noopener noreferrer"><Github /></a>
           <a href='mailto:romanjjpretty@gmail.com'><Mail /></a>
           <a href='tel:+447493402029'><Phone /></a>
-          <a href='mailto:romanjjpretty@gmail.com' className="btn btn-secondary rounded-full">
+          <a href='mailto:romanjjpretty@gmail.com' className="btn btn-secondary rounded-md">
             Contact Me
             <ArrowRight />
           </a>

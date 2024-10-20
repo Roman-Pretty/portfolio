@@ -11,7 +11,7 @@ export function Hero() {
           <img
             src={img}
             alt="Hero"
-            className=" transform -scale-x-100 absolute -right-[18vw] min-w-[50vw] overflow-hidden"
+            className=" transform -scale-x-100 absolute -right-[10vw] min-w-[40vw] -bottom-[2vh] overflow-hidden"
           />
         </div>
         <div className="">
@@ -31,7 +31,7 @@ export function Hero() {
           <div className="flex-row flex items-end justify-center md:justify-start">
             <a
               href="#about"
-              className="btn btn-neutral rounded-full hover:bg-zinc-700"
+              className="btn btn-neutral rounded-md hover:bg-zinc-700"
             >
               Find out More <ArrowRight strokeWidth={1.6} />
             </a>
